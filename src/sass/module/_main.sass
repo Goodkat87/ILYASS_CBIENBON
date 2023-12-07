@@ -1,0 +1,89 @@
+main
+    width: 100%
+    height: 100%
+    #about
+        padding-top: 100px
+        padding-bottom: 100px 
+        height: 100%
+        width: 100%
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        .aboutContainer
+            width: 95%
+            height: 100%
+            display: flex
+            justify-content: space-around
+            align-items: center
+            #aboutL
+                width: max-content
+                height: 500px
+            #aboutR
+                height: max-content
+                width: 40%
+                display: flex
+                justify-content: center
+                align-items: center
+                #bgabout
+                    border: 5px solid rgb(59,57,56,50%)
+                    width: 650px
+                    height: 500px
+                    background-image: url(./../../src/img/about.jpg)
+                    background-size: cover
+                    background-repeat: no-repeat
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    #corner
+                        width: 97%
+                        height: 97%
+                        position: relative
+                        &:before
+                            display: block
+                            content: ""
+                            width: 70px
+                            height: 70px
+                            position: absolute
+                            top: 15px
+                            left: 15px
+                            border-top: 5px solid #cda45d
+                            border-left: 5px solid #cda45d
+                        &:after
+                            display: block
+                            content: ""
+                            width: 70px
+                            height: 70px
+                            position: absolute
+                            bottom: 15px
+                            right: 15px
+                            border-bottom: 5px solid #cda45d
+                            border-right: 5px solid #cda45d
+                    &:hover
+                        #corner
+                            transition: 1s ease
+                            width: 100%
+                            height: 100%
+                        transition: 1s all ease
+                        width: 670px
+                        height: 530px
+                                                        
+
+
+            
+
+
+
+
+    #about::before
+        height: 100%
+        width: 100%
+        content: ""
+        z-index: -1
+        position: absolute
+        background-image: url(./../../src/img/about-bg.jpg)
+        background-size: cover
+        background-attachment: fixed
+        background-repeat: no-repeat
+        background-position: top
+        filter: brightness(20%)

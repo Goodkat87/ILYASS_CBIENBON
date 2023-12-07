@@ -13,35 +13,35 @@ header
         display: flex
         align-items: center
         justify-content: start
-        gap: 38%
+        gap: 40%
         div
             height: 20%
             width: max-content
             h1
-                font-size: 50px
+                font-size: 45px
                 margin-bottom: 0
             p
                 font-size: 19.5px
                 font-weight: lighter
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
         #play
-            height: 60px
-            width: 60px
-            border: 10px #cda45d solid
-            background-color: #cda45d
+            height: 80px
+            width: 80px
+            background: radial-gradient(#cda45e 50%, rgba(205, 164, 94, 0.4) 52%)
             border-radius: 50%
             display: flex
             justify-content: center
             align-items: center
             position: relative
-            margin-top: 30px
+            margin-top: 20px
             z-index: 1
+            overflow: hidden
             i.fa-play
                 color: white 
                 font-size: 20px
             &:hover
                 i.fa-play
-                    transition: 1s
+                    transition: all 1s ease
                     transform: scale(10)
                     opacity: 0
             &:before 
