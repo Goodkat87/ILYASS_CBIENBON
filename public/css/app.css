@@ -19210,7 +19210,7 @@ header #headerBottom #play:after {
     opacity: 1;
   }
   100% {
-    transform: translate(-50%, -50%) scale(1.4);
+    transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
   }
 }
@@ -19312,6 +19312,64 @@ main #about .aboutContainer #aboutR #bgabout:hover #corner {
   transition: 1s ease;
   width: 100%;
   height: 100%;
+}
+main #whyUs {
+  background-color: #000000;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #whyUs #whyUsTop {
+  width: 80%;
+  height: 30%;
+}
+main #whyUs #whyUsTop p {
+  color: white;
+  position: relative;
+  opacity: 0.5;
+}
+main #whyUs #whyUsTop p::after {
+  width: 5%;
+  margin-top: 10px;
+  display: inline-block;
+  content: "";
+  position: absolute;
+  border: 1px white solid;
+  opacity: 0.5;
+}
+main #whyUs #whyUsBottom {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+main #whyUs #whyUsBottom .boxs {
+  background-color: #1a1814;
+  height: 250px;
+  width: 390px;
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  justify-content: end;
+}
+main #whyUs #whyUsBottom .boxs div h1, main #whyUs #whyUsBottom .boxs div .h1 {
+  color: #cda45d;
+}
+main #whyUs #whyUsBottom .boxs div p {
+  color: white;
+}
+main #whyUs #whyUsBottom .boxs:hover {
+  background-color: #cda45d;
+  transition: 1s ease all;
+}
+main #whyUs #whyUsBottom .boxs:hover h1, main #whyUs #whyUsBottom .boxs:hover .h1 {
+  color: white;
+}
+main #whyUs #whyUsBottom .boxs:hover .whyUstxt {
+  transition: 1s ease all;
+  transform: translateY(-10px);
 }
 main #about::before {
   height: 100%;
