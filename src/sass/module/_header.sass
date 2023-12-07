@@ -1,14 +1,88 @@
 header
     width: 100%
-    height: 728.4px
+    height: 100%
     display: flex
     flex-direction: column
     position: relative
+    align-items: center
+    nav
+        width: 100%
+    #headerBottom
+        height: 88%
+        width: 78%
+        display: flex
+        align-items: center
+        justify-content: start
+        gap: 38%
+        div
+            height: 20%
+            width: max-content
+            h1
+                font-size: 50px
+                margin-bottom: 0
+            p
+                font-size: 19.5px
+                font-weight: lighter
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        #play
+            height: 60px
+            width: 60px
+            border: 10px #cda45d solid
+            background-color: #cda45d
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            position: relative
+            margin-top: 30px
+            z-index: 1
+            i.fa-play
+                color: white 
+                font-size: 20px
+            &:hover
+                i.fa-play
+                    transition: 1s
+                    transform: scale(10)
+                    opacity: 0
+            &:before 
+                content: ""
+                position: absolute
+                top: 50%
+                left: 50%
+                width: 250%
+                height: 250%
+                background-color: rgba(205, 163,91 , 0.4)
+                border-radius: 50%
+                transform: translate(-50%, -50%) scale(0.9)
+                z-index: -1
+            &:after 
+                content: ""
+                position: absolute
+                top: 50%
+                left: 50%
+                width: 180%
+                height: 180%
+                border-radius: 50%
+                background-color: transparent
+                border: 5px solid #CDA45D
+                transform: translate(-50%,-50%) scale(0)
+                animation: wave 2s infinite ease-out
+                z-index: -2
+
+        @keyframes wave
+            0%
+                transform: translate(-50%,-50%) scale(0.1)
+                opacity: 1
+            100%
+                transform: translate(-50%,-50%) scale(1.4)
+                opacity: 0
+                
 
 //*Hover gold on link in navbar
 .nav-link:hover
     color: #cda45d !important
 
+//* Background image with before to change only color of image
 header::before
     height: 100%
     width: 100%
@@ -16,7 +90,7 @@ header::before
     z-index: -1
     position: absolute
     background-image: url(./../../src/img/hero-bg.jpg)
-    background-size: 115% 100%
+    background-size: cover
     background-attachment: fixed
     background-repeat: no-repeat
     background-position: center
