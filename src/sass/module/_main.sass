@@ -263,9 +263,38 @@ main
                 &:hover
                     transition: 1s ease all
                     transform: scale(1.03)
-
-
-
+    #chefs
+        background-color: #0b0b09
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        #chefTop
+            width: 80%
+            height: 20%
+            p
+                color: white 
+                opacity: 0.5
+                position: relative
+                &::after
+                    width: 5%
+                    margin-top: 10px
+                    display: inline-block
+                    content: ""
+                    position: absolute
+                    border: 1px white solid
+                    opacity: 0.5
+        #chefbtm
+            width: 80%
+            height: 50%
+            display: flex
+            justify-content: center
+            justify-content: space-between
+            img
+                width: 31%
+                height: 100%
 
 
 
