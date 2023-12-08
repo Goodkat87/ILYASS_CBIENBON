@@ -202,6 +202,7 @@ main
                     background-color: #0b0b09
                     border: rgb(205, 164, 93, 30%) 1px solid
                     &::placeholder
+                        padding-left: 10px
                         color: #cda45d
                         opacity: 0.5
                     &::-webkit-outer-spin-button
@@ -220,12 +221,48 @@ main
                 width: 100%
                 height: 50%
                 &::placeholder
+                    padding-left: 10px
                     color: #cda45d
                     opacity: 0.5
 
-            
-                    
-
+    #gallery
+        width: 100%
+        height: 100%
+        background-color: #0b0b09
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding-top: 50px
+        padding-bottom: 50px
+        #galTop
+            width: 80%
+            height: 20%
+            p
+                color: white 
+                opacity: 0.5
+                position: relative
+                &::after
+                    width: 5%
+                    margin-top: 10px
+                    display: inline-block
+                    content: ""
+                    position: absolute
+                    border: 1px white solid
+                    opacity: 0.5
+        #galbtm
+            width: 100%
+            height: 100%
+            display: flex
+            flex-wrap: wrap
+            overflow: hidden
+            img
+                width: 379px
+                border: 2px solid rgb(59,57,56)
+                overflow: hidden
+                &:hover
+                    transition: 1s ease all
+                    transform: scale(1.03)
 
 
 
