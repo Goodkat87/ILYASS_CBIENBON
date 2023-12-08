@@ -19136,7 +19136,7 @@ header nav {
   width: 100%;
 }
 header #headerBottom {
-  height: 88%;
+  height: 100%;
   width: 78%;
   display: flex;
   align-items: center;
@@ -19577,6 +19577,7 @@ main #chefs #chefbtm {
 main #chefs #chefbtm img {
   width: 31%;
   height: 100%;
+  position: relative;
 }
 main #about::before {
   height: 100%;
