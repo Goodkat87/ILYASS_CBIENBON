@@ -19305,8 +19305,7 @@ main #about .aboutContainer #aboutR #bgabout #corner:after {
 }
 main #about .aboutContainer #aboutR #bgabout:hover {
   transition: 1s all ease;
-  width: 670px;
-  height: 530px;
+  transform: scale(1.08);
 }
 main #about .aboutContainer #aboutR #bgabout:hover #corner {
   transition: 1s ease;
@@ -19314,7 +19313,7 @@ main #about .aboutContainer #aboutR #bgabout:hover #corner {
   height: 100%;
 }
 main #whyUs {
-  background-color: #000000;
+  background-color: #0b0b09;
   height: 70%;
   width: 100%;
   display: flex;
@@ -19370,6 +19369,57 @@ main #whyUs #whyUsBottom .boxs:hover h1, main #whyUs #whyUsBottom .boxs:hover .h
 main #whyUs #whyUsBottom .boxs:hover .whyUstxt {
   transition: 1s ease all;
   transform: translateY(-10px);
+}
+main #events {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #events::before {
+  height: 100%;
+  width: 100%;
+  content: "";
+  z-index: -1;
+  position: absolute;
+  background-image: url(./../../src/img/events-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  filter: brightness(50%);
+}
+main #events #eventTop {
+  width: 80%;
+  height: 15%;
+}
+main #events #eventTop p {
+  color: white;
+  opacity: 0.5;
+}
+main #events #eventTop p::after {
+  width: 5%;
+  margin-top: 10px;
+  display: inline-block;
+  content: "";
+  position: absolute;
+  border: 1px white solid;
+  opacity: 0.5;
+}
+main #events #eventBottom {
+  width: 80%;
+  height: 85%;
+  padding-top: 20px;
+}
+main #events #eventBottom #carouselExampleSlidesOnly h3, main #events #eventBottom #carouselExampleSlidesOnly .h3 {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #cda45d;
 }
 main #about::before {
   height: 100%;
