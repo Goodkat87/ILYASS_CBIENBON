@@ -19421,6 +19421,78 @@ main #events #eventBottom #carouselExampleSlidesOnly h3, main #events #eventBott
   text-decoration: underline;
   text-decoration-color: #cda45d;
 }
+main #reservation {
+  width: 100%;
+  height: 70%;
+  background-color: #0b0b09;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main #reservation #resTop {
+  width: 80%;
+  height: 20%;
+}
+main #reservation #resTop p {
+  color: white;
+  opacity: 0.5;
+}
+main #reservation #resTop p::after {
+  width: 5%;
+  margin-top: 10px;
+  display: inline-block;
+  content: "";
+  position: absolute;
+  border: 1px white solid;
+  opacity: 0.5;
+}
+main #reservation #resBottom {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+main #reservation #resBottom div {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+main #reservation #resBottom div input {
+  width: 33%;
+  height: 100%;
+  color: white;
+  background-color: #0b0b09;
+  border: rgba(205, 164, 93, 0.3) 1px solid;
+}
+main #reservation #resBottom div input::placeholder {
+  color: #cda45d;
+  opacity: 0.5;
+}
+main #reservation #resBottom div input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+main #reservation #resBottom div input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+main #reservation #resBottom textarea {
+  background-color: #0b0b09;
+  color: #cda45d;
+  border: rgba(205, 164, 93, 0.3) 1px solid;
+  resize: none;
+  width: 100%;
+  height: 50%;
+}
+main #reservation #resBottom textarea::placeholder {
+  color: #cda45d;
+  opacity: 0.5;
+}
 main #about::before {
   height: 100%;
   width: 100%;

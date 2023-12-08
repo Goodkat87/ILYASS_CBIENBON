@@ -51,7 +51,7 @@
                 <p class="text-white fw-bold">Delivering great food for more than 18years!</p>
                 <div>
                     <button class="btn btn-outline-gold text-white rounded-pill" type="submit" style="width: 140px;">OUR MENU</button>
-                    <button class="btn btn-outline-gold text-white rounded-pill" type="submit" style="width: 140px;">BOOK A TABLE</button>
+                    <button class="btn btn-outline-gold text-white rounded-pill" style="width: 140px;">BOOK A TABLE</button>
                 </div>
             </div>
             <div id="play" data-bs-toggle="modal" 
@@ -183,6 +183,26 @@
               </div>
             </div>
           </div>
+        </section>
+        <section id="reservation">
+          <div id="resTop">
+            <p>RESERVATION &ensp;</p>
+            <h1 class="text-gold">Book A Table</h1>
+          </div>
+          <form id="resBottom">
+            <div id="persoInfo">
+              <input type="name" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <input type="tel" placeholder="Your Phone">
+            </div>
+            <div id="resInfo">
+              <input type="text" placeholder="Date" onfocus="(this.type='date')" onblur="(this.type='text')" >
+              <input type="text" placeholder="Time "onfocus="(this.type='time')" onblur="(this.type='text')" >
+              <input type="number" placeholder="# of people">
+            </div>
+            <textarea name="Message" id="message" placeholder="Message" ></textarea>
+            <button type="submit" class="btn text-white bg-gold rounded-pill" style="width: 130px;">Book a Table</button>
+          </form>
         </section>
     </main>
 

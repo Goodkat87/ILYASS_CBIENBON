@@ -159,6 +159,74 @@ main
                     color: white
                     text-decoration: underline
                     text-decoration-color: #cda45d 
+    #reservation
+        width: 100%
+        height: 70%
+        background-color: #0b0b09
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        
+        #resTop
+            width: 80%
+            height: 20%
+            p
+                color: white 
+                opacity: 0.5
+                &::after
+                    width: 5%
+                    margin-top: 10px
+                    display: inline-block
+                    content: ""
+                    position: absolute
+                    border: 1px white solid
+                    opacity: 0.5
+        #resBottom
+            width: 80%
+            height: 80%
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            justify-content: space-around
+            div
+                width: 100%
+                height: 10%
+                display: flex
+                justify-content: space-between
+                input
+                    width: 33%
+                    height: 100%
+                    color:  white
+                    background-color: #0b0b09
+                    border: rgb(205, 164, 93, 30%) 1px solid
+                    &::placeholder
+                        color: #cda45d
+                        opacity: 0.5
+                    &::-webkit-outer-spin-button
+                        -webkit-appearance: none
+                        margin: 0
+                    &::-webkit-inner-spin-button
+                        -webkit-appearance: none
+                        margin: 0
+                        
+                         
+            textarea
+                background-color:#0b0b09
+                color: #cda45d
+                border: rgb(205, 164, 93, 30%) 1px solid
+                resize: none
+                width: 100%
+                height: 50%
+                &::placeholder
+                    color: #cda45d
+                    opacity: 0.5
+
+            
+                    
+
+
 
 
 
