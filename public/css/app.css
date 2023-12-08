@@ -19579,6 +19579,32 @@ main #chefs #chefbtm img {
   height: 100%;
   position: relative;
 }
+main #contact {
+  background-color: #0b0b09;
+  width: 100%;
+  height: 150%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #contact #contactTop {
+  width: 80%;
+  height: 10%;
+}
+main #contact #contactTop p {
+  color: white;
+  opacity: 0.5;
+  position: relative;
+}
+main #contact #contactTop p::after {
+  width: 5%;
+  margin-top: 10px;
+  display: inline-block;
+  content: "";
+  position: absolute;
+  border: 1px white solid;
+  opacity: 0.5;
+}
 main #about::before {
   height: 100%;
   width: 100%;
