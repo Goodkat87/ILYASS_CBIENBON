@@ -303,6 +303,8 @@ main
         display: flex
         flex-direction: column
         align-items: center
+        gap: 30px
+        padding-bottom: 100px
         #contactTop
             width: 80%
             height: 10%
@@ -318,10 +320,63 @@ main
                     position: absolute
                     border: 1px white solid
                     opacity: 0.5
-        iframe
-
+        #contactbtm
+            width: 80%
+            height: 60%
+            display: flex
+            #cbtmleft
+                width: 40%
+                height: 100%
+            #cbtmright
+                width: 60%
+                height: 100%
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                justify-content: space-around
+                #ctinfo
+                    width: 100%
+                    height: 10%
+                    display: flex
+                    justify-content: space-between
+                    input
+                        width: 49%
+                        height: 100%
+                        color:  white
+                        background-color: #0b0b09
+                        border: rgb(205, 164, 93, 30%) 1px solid
+                        &::placeholder
+                            padding-left: 10px
+                            color: #cda45d
+                            opacity: 0.5
+                #ctSubject
+                    width: 100%
+                    height: 10%
+                    display: flex
+                    justify-content: space-between
+                    input
+                        width: 100%
+                        height: 100%
+                        color:  white
+                        background-color: #0b0b09
+                        border: rgb(205, 164, 93, 30%) 1px solid
+                        &::placeholder
+                            padding-left: 10px
+                            color: #cda45d
+                            opacity: 0.5
             
-
+                textarea
+                    background-color:#0b0b09
+                    color: #cda45d
+                    border: rgb(205, 164, 93, 30%) 1px solid
+                    resize: none
+                    width: 100%
+                    height: 50%
+                    &::placeholder
+                        padding-left: 10px
+                        color: #cda45d
+                        opacity: 0.5
 
 
 
