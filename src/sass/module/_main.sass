@@ -316,10 +316,38 @@ main
             display: flex
             justify-content: center
             justify-content: space-between
-            img
+            .chefs-img
                 width: 31%
                 height: 100%
                 position: relative
+                overflow: hidden
+                img
+                    width: 100%
+                    height: 100%
+                .chefs-infos
+                    transform: translateY(-100%)
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    background: rgb(0,0,0)
+                    background: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(0,0,0,0.7344187675070029) 59%, rgba(0,0,1,0.4234943977591037) 87%, rgba(0,0,0,0) 100%)
+                    display: flex
+                    flex-direction: column
+                    justify-content: end
+                    align-items: center
+                    color: white
+                    p
+                        padding-bottom: 0
+                    #social
+                        height: max-content
+                        width: 30%
+                        display: flex
+                        justify-content: space-between
+                        i
+                            &:hover
+                                color: #cda45d !important
+
+
     #contact
         background-color: #0b0b09
         width: 100%
@@ -402,8 +430,6 @@ main
                         color: #cda45d
                         opacity: 0.5
 
-
-        /* ### SECTION 3 ### */
     #menu
         background-color: #1A1814
         padding-top: 55px
@@ -498,10 +524,6 @@ main
                                 font-style: italic
                                 font-size: 15px
                                 color: rgba(255, 255, 255, 0.5)
-
-
-
-
 
     #about::before
         height: 100%

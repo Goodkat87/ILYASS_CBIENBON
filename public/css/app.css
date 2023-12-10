@@ -19601,10 +19601,40 @@ main #chefs #chefbtm {
   justify-content: center;
   justify-content: space-between;
 }
-main #chefs #chefbtm img {
+main #chefs #chefbtm .chefs-img {
   width: 31%;
   height: 100%;
   position: relative;
+  overflow: hidden;
+}
+main #chefs #chefbtm .chefs-img img {
+  width: 100%;
+  height: 100%;
+}
+main #chefs #chefbtm .chefs-img .chefs-infos {
+  transform: translateY(-100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 15%, rgba(0, 0, 0, 0.7344187675) 59%, rgba(0, 0, 1, 0.4234943978) 87%, rgba(0, 0, 0, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  color: white;
+}
+main #chefs #chefbtm .chefs-img .chefs-infos p {
+  padding-bottom: 0;
+}
+main #chefs #chefbtm .chefs-img .chefs-infos #social {
+  height: max-content;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+main #chefs #chefbtm .chefs-img .chefs-infos #social i:hover {
+  color: #cda45d !important;
 }
 main #contact {
   background-color: #0b0b09;
@@ -19615,7 +19645,6 @@ main #contact {
   align-items: center;
   gap: 30px;
   padding-bottom: 100px;
-  /* ### SECTION 3 ### */
 }
 main #contact #contactTop {
   width: 80%;

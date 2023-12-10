@@ -1,525 +1,592 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CBienBon</title>
-    <link rel="stylesheet" href="./public/css/app.css">
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBienBon</title>
+  <link rel="stylesheet" href="./public/css/app.css">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
+
 <body>
-    <div class="modal modal-fullscreen" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel"  aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <video controls autoplay src="./src/videos/cbienbonvideo.mp4"></video>
-      </div>
+  <div class="modal modal-fullscreen" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <video controls src="./src/videos/cbienbonvideo.mp4"></video>
     </div>
-    <header id="home">
-        <nav class="navbar fixed-top navbar-expand-lg bg-black bg-opacity-50 py-1">
-            <div class="container-fluid">
-              <a class="navbar-brand text-white ps-2 fs-3" href="#">CBIENBON</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse ps-20" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active text-white ps-2" aria-current="page" href="#home">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white ps-2" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white ps-2" href="#menu">Menu</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white ps-2" href="#events">Events</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white ps-2" href="#gallery">Gallery</a>
-                  </li>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white ps-2" href="#chefs">Chefs</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white ps-2" href="#contact">Contact</a>
-                  </li>
-                </ul>
-                <a href="#reservation"><button class="btn btn-outline-gold text-white rounded-pill" type="submit" style="width: 140px;">BOOK A TABLE</button></a>
-              </div>
-            </div>
-          </nav>
+  </div>
+  <header id="home">
+    <nav class="navbar fixed-top navbar-expand-lg bg-black bg-opacity-50 py-1">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white ps-2 fs-3" href="#">CBIENBON</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ps-20" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white ps-2" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white ps-2" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white ps-2" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white ps-2" href="#events">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white ps-2" href="#gallery">Gallery</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white ps-2" href="#chefs">Chefs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white ps-2" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <a href="#reservation"><button class="btn btn-outline-gold text-white rounded-pill" type="submit"
+              style="width: 140px;">BOOK A TABLE</button></a>
+        </div>
+      </div>
+    </nav>
 
-          <div id="headerBottom">
-            <div>
-                <h1 class="text-white fw-bold">Welcome to <span class="text-gold">CBIENBON</span></h1>
-                <p class="text-white fw-bold">Delivering great food for more than 18years!</p>
-                <div>
-                    <button class="btn btn-outline-gold text-white rounded-pill" type="submit" style="width: 140px;">OUR MENU</button>
-                    <a href="#reservation"><button class="btn btn-outline-gold text-white rounded-pill" style="width: 140px;">BOOK A TABLE</button></a>
-                </div>
-            </div>
-            <div id="play" data-bs-toggle="modal" data-bs-target="#myModal">
-                <i class="fa-solid fa-play"></i>
-            </div>
-    </header>
+    <div id="headerBottom">
+      <div>
+        <h1 class="text-white fw-bold">Welcome to <span class="text-gold">CBIENBON</span></h1>
+        <p class="text-white fw-bold">Delivering great food for more than 18years!</p>
+        <div>
+          <button class="btn btn-outline-gold text-white rounded-pill" type="submit" style="width: 140px;">OUR
+            MENU</button>
+          <a href="#reservation"><button class="btn btn-outline-gold text-white rounded-pill" style="width: 140px;">BOOK
+              A TABLE</button></a>
+        </div>
+      </div>
+      <div id="play" data-bs-toggle="modal" data-bs-target="#myModal">
+        <i class="fa-solid fa-play"></i>
+      </div>
+  </header>
 
-    <main>
-        <section id="about">
-            <div class="aboutContainer">
-                <div id="aboutL">
-                    <h1 class="text-white fs-4">Voluptatem dignissimos provident quasi corporis <br> voluptates sit assumenda.</h1>
-                    <p class="text-white fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br>ut labore et dolore magna aliqua.</p>
-                    <p class="text-white"><i class="fa-regular fa-circle-check text-gold"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p class="text-white"><i class="fa-regular fa-circle-check text-gold"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-                    <p class="text-white"><i class="fa-regular fa-circle-check text-gold"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <br>reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla <br>pariatur.</p>
-                    <p class="text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <br>reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur <br>sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id <br>est laborum</p>
-                </div>
-                <div id="aboutR">
-                    <div id="bgabout"><div id="corner"></div></div>
-                </div>
-            </div>
-        </section>
-        <section id="whyUs">
-          <div id="whyUsTop">
-            <p>WHY US &ensp;</p> 
-            <h1 class="text-gold">Why Choose Our Restaurant</h1>
+  <main>
+    <section id="about">
+      <div class="aboutContainer">
+        <div id="aboutL">
+          <h1 class="text-white fs-4">Voluptatem dignissimos provident quasi corporis <br> voluptates sit assumenda.
+          </h1>
+          <p class="text-white fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt <br>ut labore et dolore magna aliqua.</p>
+          <p class="text-white"><i class="fa-regular fa-circle-check text-gold"></i> Ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
+          <p class="text-white"><i class="fa-regular fa-circle-check text-gold"></i> Duis aute irure dolor in
+            reprehenderit in voluptate velit.</p>
+          <p class="text-white"><i class="fa-regular fa-circle-check text-gold"></i> Ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in <br>reprehenderit in voluptate trideta storacalaperda mastiro
+            dolore eu fugiat nulla <br>pariatur.</p>
+          <p class="text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            <br>reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur <br>sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id <br>est laborum</p>
+        </div>
+        <div id="aboutR">
+          <div id="bgabout">
+            <div id="corner"></div>
           </div>
-          <div id="whyUsBottom">
-            <div class="boxs">
-              <div class="whyUstxt">
-                <h1 class="fs-3">01</h1>
-                <h2 class="text-white">Lorem Ipsum</h2>
-                <p class="text-white mt-1 fs-9">Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+        </div>
+      </div>
+    </section>
+    <section id="whyUs">
+      <div id="whyUsTop">
+        <p>WHY US &ensp;</p>
+        <h1 class="text-gold">Why Choose Our Restaurant</h1>
+      </div>
+      <div id="whyUsBottom">
+        <div class="boxs">
+          <div class="whyUstxt">
+            <h1 class="fs-3">01</h1>
+            <h2 class="text-white">Lorem Ipsum</h2>
+            <p class="text-white mt-1 fs-9">Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur
+              ducimus vero placeat</p>
+          </div>
+        </div>
+        <div class="boxs">
+          <div class="whyUstxt">
+            <h1 class="fs-3">02</h1>
+            <h2 class="text-white">Repeat Nihil</h2>
+            <p class="text-white mt-1 fs-9">Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor
+              quod vel dire leno para dest</p>
+          </div>
+        </div>
+        <div class="boxs">
+          <div class="whyUstxt">
+            <h1 class="fs-3">03</h1>
+            <h2 class="text-white">Ad ad velit qui</h2>
+            <p class="text-white mt-1 fs-9">Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis
+              quo vel nam quis</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="menu">
+      <div class="resto-menu-content">
+        <div id="menu-top">
+          <p>MENU &ensp;</p>
+          <h1 class="text-gold">Check Our Tasty Menu</h1>
+        </div>
+        <div class="dish-menu-content">
+          <div class="dish-menu-select">
+            <ul id="menu-filter">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-starters">Starters</li>
+              <li data-filter=".filter-salads">Salads</li>
+              <li data-filter=".filter-specialty">Specialty</li>
+            </ul>
+          </div>
+          <div class="meals">
+            <div class="menu-card filter-starters">
+              <div class="menu-card-img">
+                <img src="./src/img/menu/lobster-bisque.jpg" alt="lobster-bisque">
+              </div>
+              <div class="menu-card-text">
+                <div class="menu-content">
+                  <p>Lobster Bisque</p>
+                  <div class="space-menu"></div>
+                  <span>$5.95</span>
+                </div>
+                <div class="description">
+                  <p>Lorem, deren, trataro, filede, nerada</p>
+                </div>
               </div>
             </div>
-            <div class="boxs">
-              <div class="whyUstxt">
-                <h1 class="fs-3">02</h1>
-                <h2 class="text-white">Repeat Nihil</h2>
-                <p class="text-white mt-1 fs-9">Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod vel dire leno para dest</p>
+            <div class="menu-card filter-specialty">
+              <div class="menu-card-img">
+                <img src="./src/img/menu/bread-barrel.jpg" alt="bread-barrel">
+              </div>
+              <div class="menu-card-text">
+                <div class="menu-content">
+                  <p>Bread Barrel</p>
+                  <div class="space-menu"></div>
+                  <span>$6.95</span>
+                </div>
+                <div class="description">
+                  <p>Lorem, deren, trataro, filede, nerada</p>
+                </div>
               </div>
             </div>
-            <div class="boxs">
-              <div class="whyUstxt">
-                <h1 class="fs-3">03</h1>
-                <h2 class="text-white">Ad ad velit qui</h2>
-                <p class="text-white mt-1 fs-9">Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+            <div class="menu-card filter-starters">
+              <div class="menu-card-img">
+                <img src="./src/img/menu/cake.jpg" alt="cake">
+              </div>
+              <div class="menu-card-text">
+                <div class="menu-content">
+                  <p>Crab Cake</p>
+                  <div class="space-menu"></div>
+                  <span>$7.95</span>
+                </div>
+                <div class="description">
+                  <p>A delicate crab cake served on a toasted roll with lettuce and tartar sauce</p>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card filter-salads">
+              <div class="menu-card-img">
+                <img src="./src/img/menu/caesar.jpg" alt="caesar">
+              </div>
+              <div class="menu-card-text">
+                <div class="menu-content">
+                  <p>Caesar Selections</p>
+                  <div class="space-menu"></div>
+                  <span>$8.95</span>
+                </div>
+                <div class="description">
+                  <p>Lorem, deren, trataro, filede, nerada</p>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card filter-specialty">
+              <div class="menu-card-img">
+                <img src="./src/img/menu/tuscan-grilled.jpg" alt="tuscan-grilled">
+              </div>
+              <div class="menu-card-text">
+                <div class="menu-content">
+                  <p>Tuscan Grilled</p>
+                  <div class="space-menu"></div>
+                  <span>$9.95</span>
+                </div>
+                <div class="description">
+                  <p>Grilled chicken with provolone, artichoke hearts, and roasted red pesto</p>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card filter-starters">
+              <div class="menu-card-img">
+                <img src="./src/img/menu/mozzarella.jpg" alt="mozzarella">
+              </div>
+              <div class="menu-card-text">
+                <div class="menu-content">
+                  <p>Mozzarella Stick</p>
+                  <div class="space-menu"></div>
+                  <span>$4.95</span>
+                </div>
+                <div class="description">
+                  <p>Lorem, deren, trataro, filede, nerada</p>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card filter-salads">
+              <div class="menu-card-img">
+                <img src="./src/img/menu/greek-salad.jpg" alt="greek-salad">
+              </div>
+              <div class="menu-card-text">
+                <div class="menu-content">
+                  <p>Greek Salad</p>
+                  <div class="space-menu"></div>
+                  <span>$9.95</span>
+                </div>
+                <div class="description">
+                  <p>Fresh spinach, crisp romaine, tomatoes, and Greek olives</p>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card filter-salads">
+              <div class="menu-card-img">
+                <img src="./src/img/menu/spinach-salad.jpg" alt="spinach-salad">
+              </div>
+              <div class="menu-card-text">
+                <div class="menu-content">
+                  <p>Spianch Salad</p>
+                  <div class="space-menu"></div>
+                  <span>$9.95</span>
+                </div>
+                <div class="description">
+                  <p>Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</p>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card filter-specialty">
+              <div class="menu-card-img">
+                <img src="./src/img/menu/lobster-roll.jpg" alt="lobster-roll">
+              </div>
+              <div class="menu-card-text">
+                <div class="menu-content">
+                  <p>Lobster Roll</p>
+                  <div class="space-menu"></div>
+                  <span>$12.95</span>
+                </div>
+                <div class="description">
+                  <p>Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll</p>
+                </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
 
+    <section id="events">
+      <div id="eventTop">
+        <p>EVENTS &ensp;</p>
+        <h1 class="text-gold">Organize Your Events in our Restaurant</h1>
+      </div>
+      <div id="eventBottom">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0"
+              class="active bg-gold" aria-current="true" aria-label="Slide 1"
+              style="width: 10px; border-radius: 50%; height: 10px;"></button>
+            <button class="bg-gold" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"
+              aria-label="Slide 2" style="width: 10px; border-radius: 50%; height: 10px;"></button>
+            <button class="bg-gold" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2"
+              aria-label="Slide 3" style="width: 10px; border-radius: 50%; height: 10px;"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card mb-3 bg-transparent border-0" style="max-width: 100%;">
+                <div class="row g-0 col-12">
+                  <div class="col-md-7">
+                    <img src="./src/img/event-birthday.jpg" class="img-fluid rounded-start" alt="event-birthday">
+                  </div>
+                  <div class="col-md-5">
+                    <div class="card-body">
+                      <h5 class="card-title text-gold">Birthday Parties</h5>
+                      <h3>$189</h3>
+                      <p class="card-text text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <p class="card-text text-white">Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                      <p class="card-text text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <p class="card-text text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3 bg-transparent border-0" style="width: 100%; height: 100%;">
+                <div class="row g-0 col-12">
+                  <div class="col-md-7">
+                    <img src="./src/img/event-private.jpg" class="img-fluid rounded-start" alt="event-private">
+                  </div>
+                  <div class="col-md-5">
+                    <div class="card-body">
+                      <h5 class="card-title text-gold">Private Parties</h5>
+                      <h3>$290</h3>
+                      <p class="card-text text-white fs-6 f">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <p class="card-text text-white">Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                      <p class="card-text text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <p class="card-text text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3 bg-transparent border-0" style="width: 100%; height: 100%;">
+                <div class="row g-0 col-12">
+                  <div class="col-md-7">
+                    <img src="./src/img/event-custom.jpg" class="img-fluid rounded-start" alt="event-custom">
+                  </div>
+                  <div class="col-md-5">
+                    <div class="card-body">
+                      <h5 class="card-title text-gold">Custom Parties</h5>
+                      <h3>$99</h3>
+                      <p class="card-text text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <p class="card-text text-white">Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                      <p class="card-text text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <p class="card-text text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="reservation">
+      <div id="resTop">
+        <p>RESERVATION &ensp;</p>
+        <h1 class="text-gold">Book A Table</h1>
+      </div>
+      <form id="resBottom">
+        <div id="persoInfo">
+          <input type="name" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <input type="tel" placeholder="Your Phone">
+        </div>
+        <div id="resInfo">
+          <input type="text" placeholder="Date" onfocus="(this.type='date')" onblur="(this.type='text')">
+          <input type="text" placeholder="Time " onfocus="(this.type='time')" onblur="(this.type='text')">
+          <input type="number" placeholder="# of people">
+        </div>
+        <textarea name="Message" id="message" placeholder="Message"></textarea>
+        <button type="submit" class="btn text-white bg-gold rounded-pill" style="width: 130px;">Book a Table</button>
+      </form>
+    </section>
+    <section id="gallery">
+      <div id="galTop">
+        <p>GALLERY &ensp;</p>
+        <h1 class="text-gold">Some Photos from Our Restaurant</h1>
+      </div>
+      <div id="galbtm">
+        <div><img src="./src/img/gallery/gallery-1.jpg" alt="gallery-1"></div>
+        <div><img src="./src/img/gallery/gallery-2.jpg" alt="gallery-2"></div>
+        <div><img src="./src/img/gallery/gallery-3.jpg" alt="gallery-3"></div>
+        <div><img src="./src/img/gallery/gallery-4.jpg" alt="gallery-4"></div>
+        <div><img src="./src/img/gallery/gallery-5.jpg" alt="gallery-5"></div>
+        <div><img src="./src/img/gallery/gallery-6.jpg" alt="gallery-6"></div>
+        <div><img src="./src/img/gallery/gallery-7.jpg" alt="gallery-7"></div>
+        <div><img src="./src/img/gallery/gallery-8.jpg" alt="gallery-8"></div>
+      </div>
+    </section>
+    <section id="chefs">
+      <div id="chefTop">
+        <p>CHEFS</p>
+        <h1 class="text-gold">Our Professional Chefs</h1>
+      </div>
+      <div id="chefbtm">
+        <div class="chefs-img">
+          <img src="./src/img/chefs/chefs-1.jpg" alt="chefs-1">
+          <div class="chefs-infos">
+            <h5>Walter White</h5>
+            <p>Master Chef</p>
+            <div id="social">
+              <div><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></div>
+              <div><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></i></div>
+              <div><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></div>
+              <div><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></div>
+            </div>
+          </div>
+        </div>
         
-        <section id="menu">
-          <div class="resto-menu-content">
-              <div id="menu-top">
-                <p>MENU &ensp;</p> 
-                <h1 class="text-gold">Check Our Tasty Menu</h1>
+        <div class="chefs-img"><img src="./src/img/chefs/chefs-2.jpg" alt="chefs-2"></div>
+        
+        <div class="chefs-img"><img src="./src/img/chefs/chefs-3.jpg" alt="chefs-3"></div>
+        
+      </div>
+    </section>
+    <section id="contact">
+      <div id="contactTop">
+        <p>CONTACT</p>
+        <H1 class="text-gold">Contact</H1>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10074.774946115509!2d4.34122!3d50.8553554!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38c275028d3%3A0xc7799151146ebf77!2sMolenGeek!5e0!3m2!1sfr!2sbe!4v1702045194881!5m2!1sfr!2sbe"
+        width="100%" height="50%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <div id="contactbtm">
+        <div id="cbtmleft">
+          <div class="card mb-3 bg-transparent border-0" style="max-width: 100%;">
+            <div class="row g-0 ">
+              <div class="col-md-1 align-self-center">
+                <div class=" bg-gold rounded-pill d-flex align-items-center justify-content-center"
+                  style="width: 50px ;height: 50px;"><i class=" fs-3 fa-solid fa-location-dot"
+                    style="color: #ffffff;"></i></div>
               </div>
-              <div class="dish-menu-content">
-                  <div class="dish-menu-select">
-                      <ul id="menu-filter">
-                          <li data-filter="*" class="filter-active">All</li>
-                          <li data-filter=".filter-starters">Starters</li>
-                          <li data-filter=".filter-salads">Salads</li>
-                          <li data-filter=".filter-specialty">Specialty</li>
-                      </ul>
-                  </div>
-                  <div class="meals">
-                      <div class="menu-card filter-starters">
-                          <div class="menu-card-img">
-                              <img src="./src/img/menu/lobster-bisque.jpg" alt="lobster-bisque">
-                          </div>
-                          <div class="menu-card-text">
-                              <div class="menu-content">
-                                  <p>Lobster Bisque</p>
-                                  <div class="space-menu"></div>
-                                  <span>$5.95</span>
-                              </div>
-                              <div class="description">
-                                  <p>Lorem, deren, trataro, filede, nerada</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="menu-card filter-specialty">
-                          <div class="menu-card-img">
-                              <img src="./src/img/menu/bread-barrel.jpg" alt="bread-barrel">
-                          </div>
-                          <div class="menu-card-text">
-                              <div class="menu-content">
-                                  <p>Bread Barrel</p>
-                                  <div class="space-menu"></div>
-                                  <span>$6.95</span>
-                              </div>
-                              <div class="description">
-                                  <p>Lorem, deren, trataro, filede, nerada</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="menu-card filter-starters">
-                          <div class="menu-card-img">
-                              <img src="./src/img/menu/cake.jpg" alt="cake">
-                          </div>
-                          <div class="menu-card-text">
-                              <div class="menu-content">
-                                  <p>Crab Cake</p>
-                                  <div class="space-menu"></div>
-                                  <span>$7.95</span>
-                              </div>
-                              <div class="description">
-                                  <p>A delicate crab cake served on a toasted roll with lettuce and tartar sauce</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="menu-card filter-salads">
-                          <div class="menu-card-img">
-                              <img src="./src/img/menu/caesar.jpg" alt="caesar">
-                          </div>
-                          <div class="menu-card-text">
-                              <div class="menu-content">
-                                  <p>Caesar Selections</p>
-                                  <div class="space-menu"></div>
-                                  <span>$8.95</span>
-                              </div>
-                              <div class="description">
-                                  <p>Lorem, deren, trataro, filede, nerada</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="menu-card filter-specialty">
-                          <div class="menu-card-img">
-                              <img src="./src/img/menu/tuscan-grilled.jpg" alt="tuscan-grilled">
-                          </div>
-                          <div class="menu-card-text">
-                              <div class="menu-content">
-                                  <p>Tuscan Grilled</p>
-                                  <div class="space-menu"></div>
-                                  <span>$9.95</span>
-                              </div>
-                              <div class="description">
-                                  <p>Grilled chicken with provolone, artichoke hearts, and roasted red pesto</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="menu-card filter-starters">
-                          <div class="menu-card-img">
-                              <img src="./src/img/menu/mozzarella.jpg" alt="mozzarella">
-                          </div>
-                          <div class="menu-card-text">
-                              <div class="menu-content">
-                                  <p>Mozzarella Stick</p>
-                                  <div class="space-menu"></div>
-                                  <span>$4.95</span>
-                              </div>
-                              <div class="description">
-                                  <p>Lorem, deren, trataro, filede, nerada</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="menu-card filter-salads">
-                          <div class="menu-card-img">
-                              <img src="./src/img/menu/greek-salad.jpg" alt="greek-salad">
-                          </div>
-                          <div class="menu-card-text">
-                              <div class="menu-content">
-                                  <p>Greek Salad</p>
-                                  <div class="space-menu"></div>
-                                  <span>$9.95</span>
-                              </div>
-                              <div class="description">
-                                  <p>Fresh spinach, crisp romaine, tomatoes, and Greek olives</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="menu-card filter-salads">
-                          <div class="menu-card-img">
-                              <img src="./src/img/menu/spinach-salad.jpg" alt="spinach-salad">
-                          </div>
-                          <div class="menu-card-text">
-                              <div class="menu-content">
-                                  <p>Spianch Salad</p>
-                                  <div class="space-menu"></div>
-                                  <span>$9.95</span>
-                              </div>
-                              <div class="description">
-                                  <p>Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="menu-card filter-specialty">
-                          <div class="menu-card-img">
-                              <img src="./src/img/menu/lobster-roll.jpg" alt="lobster-roll">
-                          </div>
-                          <div class="menu-card-text">
-                              <div class="menu-content">
-                                  <p>Lobster Roll</p>
-                                  <div class="space-menu"></div>
-                                  <span>$12.95</span>
-                              </div>
-                              <div class="description">
-                                  <p>Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-
-        <section id="events">
-          <div id="eventTop">
-            <p>EVENTS &ensp;</p>
-            <h1 class="text-gold">Organize Your Events in our Restaurant</h1>
-          </div>
-          <div id="eventBottom">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active bg-gold" aria-current="true" aria-label="Slide 1" style="width: 10px; border-radius: 50%; height: 10px;"></button>
-                <button class="bg-gold" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide 2" style="width: 10px; border-radius: 50%; height: 10px;"></button>
-                <button class="bg-gold" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2" aria-label="Slide 3" style="width: 10px; border-radius: 50%; height: 10px;"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="card mb-3 bg-transparent border-0" style="max-width: 100%;">
-                    <div class="row g-0 col-12">
-                      <div class="col-md-7">
-                        <img src="./src/img/event-birthday.jpg" class="img-fluid rounded-start" alt="event-birthday">
-                      </div>
-                      <div class="col-md-5">
-                        <div class="card-body">
-                          <h5 class="card-title text-gold">Birthday Parties</h5>
-                          <h3>$189</h3>
-                          <p class="card-text text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                          <p class="card-text text-white">Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-                          <p class="card-text text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                          <p class="card-text text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card mb-3 bg-transparent border-0" style="width: 100%; height: 100%;">
-                    <div class="row g-0 col-12">
-                      <div class="col-md-7">
-                        <img src="./src/img/event-private.jpg" class="img-fluid rounded-start" alt="event-private">
-                      </div>
-                      <div class="col-md-5">
-                        <div class="card-body">
-                          <h5 class="card-title text-gold">Private Parties</h5>
-                          <h3>$290</h3>
-                          <p class="card-text text-white fs-6 f">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                          <p class="card-text text-white">Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-                          <p class="card-text text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                          <p class="card-text text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card mb-3 bg-transparent border-0" style="width: 100%; height: 100%;">
-                    <div class="row g-0 col-12">
-                      <div class="col-md-7">
-                        <img src="./src/img/event-custom.jpg" class="img-fluid rounded-start" alt="event-custom">
-                      </div>
-                      <div class="col-md-5">
-                        <div class="card-body">
-                          <h5 class="card-title text-gold">Custom Parties</h5>
-                          <h3>$99</h3>
-                          <p class="card-text text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                          <p class="card-text text-white">Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-                          <p class="card-text text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                          <p class="card-text text-white">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="col-md-11">
+                <div class="card-body">
+                  <h5 class="card-title text-white">Location:</h5>
+                  <p class="card-text text-gold">A108 Adam Street, New-York, NY 535022</p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section id="reservation">
-          <div id="resTop">
-            <p>RESERVATION &ensp;</p>
-            <h1 class="text-gold">Book A Table</h1>
-          </div>
-          <form id="resBottom">
-            <div id="persoInfo">
-              <input type="name" placeholder="Name">
-              <input type="email" placeholder="Email">
-              <input type="tel" placeholder="Your Phone">
-            </div>
-            <div id="resInfo">
-              <input type="text" placeholder="Date" onfocus="(this.type='date')" onblur="(this.type='text')" >
-              <input type="text" placeholder="Time "onfocus="(this.type='time')" onblur="(this.type='text')" >
-              <input type="number" placeholder="# of people">
-            </div>
-            <textarea name="Message" id="message" placeholder="Message" ></textarea>
-            <button type="submit" class="btn text-white bg-gold rounded-pill" style="width: 130px;">Book a Table</button>
-          </form>
-        </section>
-        <section id="gallery">
-          <div id="galTop">
-            <p>GALLERY &ensp;</p>
-            <h1 class="text-gold">Some Photos from Our Restaurant</h1>
-          </div>
-          <div id="galbtm">
-            <div><img src="./src/img/gallery/gallery-1.jpg" alt="gallery-1"></div>
-            <div><img src="./src/img/gallery/gallery-2.jpg" alt="gallery-2"></div>
-            <div><img src="./src/img/gallery/gallery-3.jpg" alt="gallery-3"></div>
-            <div><img src="./src/img/gallery/gallery-4.jpg" alt="gallery-4"></div>
-            <div><img src="./src/img/gallery/gallery-5.jpg" alt="gallery-5"></div>
-            <div><img src="./src/img/gallery/gallery-6.jpg" alt="gallery-6"></div>
-            <div><img src="./src/img/gallery/gallery-7.jpg" alt="gallery-7"></div>
-            <div><img src="./src/img/gallery/gallery-8.jpg" alt="gallery-8"></div>
-          </div>
-        </section>
-        <section id="chefs">
-          <div id="chefTop">
-            <p>CHEFS</p>
-            <h1 class="text-gold">Our Professional Chefs</h1>
-          </div>
-          <div id="chefbtm">
-            <img src="./src/img/chefs/chefs-1.jpg" alt="chefs-1"> 
-            <img src="./src/img/chefs/chefs-2.jpg" alt="chefs-2"> 
-            <img src="./src/img/chefs/chefs-3.jpg" alt="chefs-3"> 
-          </div>
-        </section>
-        <section id="contact">
-          <div id="contactTop" >
-            <p>CONTACT</p>
-            <H1 class="text-gold">Contact</H1>
-          </div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10074.774946115509!2d4.34122!3d50.8553554!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38c275028d3%3A0xc7799151146ebf77!2sMolenGeek!5e0!3m2!1sfr!2sbe!4v1702045194881!5m2!1sfr!2sbe" width="100%" height="50%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-          <div id="contactbtm">
-            <div id="cbtmleft">
-              <div class="card mb-3 bg-transparent border-0" style="max-width: 100%;">
-                <div class="row g-0 ">
-                  <div class="col-md-1 align-self-center">
-                    <div class=" bg-gold rounded-pill d-flex align-items-center justify-content-center" style="width: 50px ;height: 50px;"><i class=" fs-3 fa-solid fa-location-dot" style="color: #ffffff;"></i></div>
-                  </div>
-                  <div class="col-md-11">
-                    <div class="card-body">
-                      <h5 class="card-title text-white">Location:</h5>
-                      <p class="card-text text-gold">A108 Adam Street, New-York, NY 535022</p>
-                    </div>
-                  </div>
+          <div class="card mb-3 bg-transparent border-0" style="max-width: 100%;">
+            <div class="row g-0 ">
+              <div class="col-md-1 align-self-center">
+                <div class=" bg-gold rounded-pill d-flex align-items-center justify-content-center"
+                  style="width: 50px ;height: 50px;"><i class="fa-regular fa-clock fs-3" style="color: #ffffff;"></i>
                 </div>
               </div>
-              <div class="card mb-3 bg-transparent border-0" style="max-width: 100%;">
-                <div class="row g-0 ">
-                  <div class="col-md-1 align-self-center">
-                    <div class=" bg-gold rounded-pill d-flex align-items-center justify-content-center" style="width: 50px ;height: 50px;"><i class="fa-regular fa-clock fs-3" style="color: #ffffff;"></i></div>
-                  </div>
-                  <div class="col-md-11">
-                    <div class="card-body">
-                      <h5 class="card-title text-white">Open Hours:</h5>
-                      <p class="card-text text-gold">Monday-Saturday: <br>11:00 AM - 23:00 PM</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card mb-3 bg-transparent border-0" style="max-width: 100%;">
-                <div class="row g-0 ">
-                  <div class="col-md-1 align-self-center">
-                    <div class=" bg-gold rounded-pill d-flex align-items-center justify-content-center" style="width: 50px ;height: 50px;"><i class="fa-regular fa-envelope fs-3" style="color: #ffffff;"></i></div>
-                  </div>
-                  <div class="col-md-11">
-                    <div class="card-body">
-                      <h5 class="card-title text-white">Email:</h5>
-                      <a href="mailto:info@example.com" class="card-text text-gold text-decoration-none">info@example.com</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card mb-3 bg-transparent border-0" style="max-width: 100%;">
-                <div class="row g-0 ">
-                  <div class="col-md-1 align-self-center">
-                    <div class=" bg-gold rounded-pill d-flex align-items-center justify-content-center" style="width: 50px ;height: 50px;"><i class="fa-solid fa-mobile-screen-button fs-3" style="color: #ffffff;"></i></div>
-                  </div>
-                  <div class="col-md-11">
-                    <div class="card-body">
-                      <h5 class="card-title text-white">Call:</h5>
-                      <a href="tel:+155895548855" class="card-text text-gold text-decoration-none">+1 5589 55488 55s</a>
-                    </div>
-                  </div>
+              <div class="col-md-11">
+                <div class="card-body">
+                  <h5 class="card-title text-white">Open Hours:</h5>
+                  <p class="card-text text-gold">Monday-Saturday: <br>11:00 AM - 23:00 PM</p>
                 </div>
               </div>
             </div>
-            <form id="cbtmright">
-              <div id="ctinfo">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
+          </div>
+          <div class="card mb-3 bg-transparent border-0" style="max-width: 100%;">
+            <div class="row g-0 ">
+              <div class="col-md-1 align-self-center">
+                <div class=" bg-gold rounded-pill d-flex align-items-center justify-content-center"
+                  style="width: 50px ;height: 50px;"><i class="fa-regular fa-envelope fs-3" style="color: #ffffff;"></i>
+                </div>
               </div>
-              <div id="ctSubject">
-                <input type="text" placeholder="Subject">
+              <div class="col-md-11">
+                <div class="card-body">
+                  <h5 class="card-title text-white">Email:</h5>
+                  <a href="mailto:info@example.com"
+                    class="card-text text-gold text-decoration-none">info@example.com</a>
+                </div>
               </div>
-              <textarea name="Message" id="Message"  placeholder="Message"></textarea>
-              <button class="btn bg-gold text-white rounded-pill" style="width: 160px;">Send Message</button>
-            </form>
+            </div>
           </div>
-        </section>
-    </main>
-
-    <footer>
-      <section id="footerTop">
-        <div id="info">
-          <h3 class="text-white">CBIENBON</h3>
-          <p class="fst-italic text-white">A108 Adam Street <br>NY 535022, USA</p>
-          <a href="tel:+155895548855" class="text-white text-decoration-none"><span class="fw-bold">Phone :</span> +1 5589 55488 55</a>
-          <a href="mailto:+155895548855" class="text-white text-decoration-none"><span class="fw-bold">Email :</span> info@example.com</a>
-          <div id="icons">
-            <div><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></div>
-            <div><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></div>
-            <div><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></div>
-            <div><i class="fa-brands fa-skype" style="color: #ffffff;"></i></div>
-            <div><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></div>
+          <div class="card mb-3 bg-transparent border-0" style="max-width: 100%;">
+            <div class="row g-0 ">
+              <div class="col-md-1 align-self-center">
+                <div class=" bg-gold rounded-pill d-flex align-items-center justify-content-center"
+                  style="width: 50px ;height: 50px;"><i class="fa-solid fa-mobile-screen-button fs-3"
+                    style="color: #ffffff;"></i></div>
+              </div>
+              <div class="col-md-11">
+                <div class="card-body">
+                  <h5 class="card-title text-white">Call:</h5>
+                  <a href="tel:+155895548855" class="card-text text-gold text-decoration-none">+1 5589 55488 55s</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div>
-          <h4 class="text-white">Useful Links</h4>
-          <ul class="">
-            <li><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i><a  class="text-decoration-none text-white" href="#home">&ensp;Home</a></li>
-            <li><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i><a  class="text-decoration-none text-white" href="#about">&ensp;About Us</a></li>
-            <li><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i><a  class="text-decoration-none text-white" href="#events">&ensp;Services</a></li>
-            <li><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i><a  class="text-decoration-none text-white" href="#chefs">&ensp;Terms Of service</a></li>
-            <li><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i><a  class="text-decoration-none text-white" href="#">&ensp;Privacy Police</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-white">Our Services</h4>
-          <ul class="">
-            <li class="text-white"><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i>&ensp;Web Design</li>
-            <li class="text-white"><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i>&ensp;Web Development</li>
-            <li class="text-white"><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i>&ensp;Prdouct Managemen</li>
-            <li class="text-white"><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i>&ensp;Marketin</li>
-            <li class="text-white"><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i>&ensp;Graphic Design</li>
-          </ul>
-        </div>
-        <div id="Newsletter">
-          <h4 class="text-white">Our Newsletter</h4>
-          <p class="text-white">Tamen quem legam multos aute sint culpa legam <br>noster magna</p>
-          <div id="suscribe">
-            <input type="text">
-            <button class="btn bg-gold rounded-pill text-white" style="width: 140px;">suscribe</button>
+        <form id="cbtmright">
+          <div id="ctinfo">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
           </div>
-        </div>
-      </section>
-      <section id="footerbottom">
-        <p class="text-white">&copy; Copyright <span class="fw-bold">CBIENBON</span>. All Rights reserved</p>
-      </section>
-    </footer>
+          <div id="ctSubject">
+            <input type="text" placeholder="Subject">
+          </div>
+          <textarea name="Message" id="Message" placeholder="Message"></textarea>
+          <button class="btn bg-gold text-white rounded-pill" style="width: 160px;">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-    <script src="./public/js/main.js"></script>
-    <script src="./node_modules/@popperjs/core/dist/umd/popper.js"></script>   
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>   
+  <footer>
+    <section id="footerTop">
+      <div id="info">
+        <h3 class="text-white">CBIENBON</h3>
+        <p class="fst-italic text-white">A108 Adam Street <br>NY 535022, USA</p>
+        <a href="tel:+155895548855" class="text-white text-decoration-none"><span class="fw-bold">Phone :</span> +1 5589
+          55488 55</a>
+        <a href="mailto:+155895548855" class="text-white text-decoration-none"><span class="fw-bold">Email :</span>
+          info@example.com</a>
+        <div id="icons">
+          <div><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></div>
+          <div><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></div>
+          <div><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></div>
+          <div><i class="fa-brands fa-skype" style="color: #ffffff;"></i></div>
+          <div><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></div>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-white">Useful Links</h4>
+        <ul class="">
+          <li><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i><a
+              class="text-decoration-none text-white" href="#home">&ensp;Home</a></li>
+          <li><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i><a
+              class="text-decoration-none text-white" href="#about">&ensp;About Us</a></li>
+          <li><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i><a
+              class="text-decoration-none text-white" href="#events">&ensp;Services</a></li>
+          <li><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i><a
+              class="text-decoration-none text-white" href="#chefs">&ensp;Terms Of service</a></li>
+          <li><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i><a
+              class="text-decoration-none text-white" href="#">&ensp;Privacy Police</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white">Our Services</h4>
+        <ul class="">
+          <li class="text-white"><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i>&ensp;Web Design
+          </li>
+          <li class="text-white"><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i>&ensp;Web
+            Development</li>
+          <li class="text-white"><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i>&ensp;Prdouct
+            Managemen</li>
+          <li class="text-white"><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i>&ensp;Marketin
+          </li>
+          <li class="text-white"><i class="fa-solid fa-chevron-right fs-11" style="color: #cda45d;"></i>&ensp;Graphic
+            Design</li>
+        </ul>
+      </div>
+      <div id="Newsletter">
+        <h4 class="text-white">Our Newsletter</h4>
+        <p class="text-white">Tamen quem legam multos aute sint culpa legam <br>noster magna</p>
+        <div id="suscribe">
+          <input type="text">
+          <button class="btn bg-gold rounded-pill text-white" style="width: 140px;">suscribe</button>
+        </div>
+      </div>
+    </section>
+    <section id="footerbottom">
+      <p class="text-white">&copy; Copyright <span class="fw-bold">CBIENBON</span>. All Rights reserved</p>
+    </section>
+  </footer>
+
+  <script src="./public/js/main.js"></script>
+  <script src="./node_modules/@popperjs/core/dist/umd/popper.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
+
 </html>
