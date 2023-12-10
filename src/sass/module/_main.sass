@@ -403,7 +403,54 @@ main
                         opacity: 0.5
 
 
-            
+        /* ### SECTION 3 ### */
+    #menu
+        background-color: #1A1814
+        padding-top: 55px
+        padding-bottom: 60px
+        width: 100%
+        .resto-menu-content
+            width: 100%
+            padding-left: 5%
+            padding-right: 5%
+            #menu-top
+                width: 80%
+                height: 10%
+                p
+                    color: white 
+                    opacity: 0.5
+                    position: relative
+                    &::after
+                        width: 5%
+                        margin-top: 10px
+                        display: inline-block
+                        content: ""
+                        position: absolute
+                        border: 1px white solid
+                        opacity: 0.5
+            .dish-menu-content
+                padding-top: 30px
+                width: 100%
+                .dish-menu-select
+                    #menu-filter
+                        padding: 0
+                        list-style: none
+                        text-decoration: none
+                        display: flex
+                        justify-content: center
+                        gap: 30px
+                        li
+                            font-family: 'Times New Roman', Times, serif
+                            font-size: 20px
+                            cursor: pointer
+                            color: #FFFFFF
+                            transition: all 0.3s ease
+                        li:hover
+                            color: #CDA45D
+                        li.filter-active
+                            color: #CDA45D
+
+
 
 
 

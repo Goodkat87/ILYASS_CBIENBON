@@ -110,31 +110,26 @@
           </div>
         </section>
 
+        
         <section id="menu">
-          <div id="menuTop">
-            <p>MENU &ensp;</p>
-            <h1 class="text-gold">Check Our Tasty Menu</h1>
-          </div>
-          <div id="menuBtm">
-            <ul class="nav justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#all">All</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white " href="#starters">Starters</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#salads">Salads</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Speciality</a>
-              </li>
-            </ul>
-          </div>
-          <div>
+          <div class="resto-menu-content">
+              <div id="menu-top">
+                <p>MENU &ensp;</p> 
+                <h1 class="text-gold">Check Our Tasty Menu</h1>
+              </div>
+              <div class="dish-menu-content">
+                  <div class="dish-menu-select">
+                      <ul id="menu-filter">
+                          <li data-filter="*" class="filter-active">All</li>
+                          <li data-filter=".filter-starters">Starters</li>
+                          <li data-filter=".filter-salads">Salads</li>
+                          <li data-filter=".filter-specialty">Specialty</li>
+                      </ul>
+                  </div>
 
+              </div>
           </div>
-        </section>
+      </section>
 
         <section id="events">
           <div id="eventTop">
@@ -386,6 +381,8 @@
         <p class="text-white">&copy; Copyright <span class="fw-bold">CBIENBON</span>. All Rights reserved</p>
       </section>
     </footer>
+
+    <script src="./public/js/main.js"></script>
     <script src="./node_modules/@popperjs/core/dist/umd/popper.js"></script>   
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>   
 </body>
