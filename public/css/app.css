@@ -19612,7 +19612,6 @@ main #chefs #chefbtm .chefs-img img {
   height: 100%;
 }
 main #chefs #chefbtm .chefs-img .chefs-infos {
-  transform: translateY(-100%);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -19635,6 +19634,18 @@ main #chefs #chefbtm .chefs-img .chefs-infos #social {
 }
 main #chefs #chefbtm .chefs-img .chefs-infos #social i:hover {
   color: #cda45d !important;
+}
+main #chefs #chefbtm #walt:hover .chefs-infos {
+  transition: 1s all ease;
+  transform: translateY(-100%);
+}
+main #chefs #chefbtm #sarah:hover .chefs-infos {
+  transition: 1s all ease;
+  transform: translateY(-100%);
+}
+main #chefs #chefbtm #wili:hover .chefs-infos {
+  transition: 1s all ease;
+  transform: translateY(-100%);
 }
 main #contact {
   background-color: #0b0b09;
