@@ -19756,6 +19756,63 @@ main #menu .resto-menu-content .dish-menu-content .dish-menu-select #menu-filter
 main #menu .resto-menu-content .dish-menu-content .dish-menu-select #menu-filter li.filter-active {
   color: #CDA45D;
 }
+main #menu .resto-menu-content .dish-menu-content .meals {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main #menu .resto-menu-content .dish-menu-content .meals .menu-card {
+  padding-top: 50px;
+  width: 49%;
+  min-width: 400px;
+  display: flex;
+  gap: 20px;
+}
+main #menu .resto-menu-content .dish-menu-content .meals .menu-card .menu-card-img img {
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid #484642;
+}
+main #menu .resto-menu-content .dish-menu-content .meals .menu-card .menu-card-text {
+  width: 100%;
+}
+main #menu .resto-menu-content .dish-menu-content .meals .menu-card .menu-card-text .menu-content {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+main #menu .resto-menu-content .dish-menu-content .meals .menu-card .menu-card-text .menu-content p {
+  position: relative;
+  z-index: 3;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding-right: 10px;
+}
+main #menu .resto-menu-content .dish-menu-content .meals .menu-card .menu-card-text .menu-content .space-menu {
+  flex-basis: 1;
+  overflow: hidden;
+  flex: 20;
+  flex-shrink: 4;
+  border-bottom: 1px dotted #FFFFFF;
+  font-size: 0px;
+}
+main #menu .resto-menu-content .dish-menu-content .meals .menu-card .menu-card-text .menu-content span {
+  position: relative;
+  z-index: 3;
+  padding: 0 10px;
+  font-weight: 600;
+  color: #cda45e;
+}
+main #menu .resto-menu-content .dish-menu-content .meals .menu-card .menu-card-text .description {
+  font-style: italic;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
 main #about::before {
   height: 100%;
   width: 100%;
