@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
 <body>
+    <div class="modal modal-fullscreen" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel"  aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <video controls autoplay src="./src/videos/cbienbonvideo.mp4"></video>
+      </div>
+    </div>
     <header id="home">
         <nav class="navbar fixed-top navbar-expand-lg bg-black bg-opacity-50 py-1">
             <div class="container-fluid">
@@ -54,11 +59,9 @@
                     <a href="#reservation"><button class="btn btn-outline-gold text-white rounded-pill" style="width: 140px;">BOOK A TABLE</button></a>
                 </div>
             </div>
-            <div id="play" data-bs-toggle="modal" 
-            data-bs-target="modalvideo">
+            <div id="play" data-bs-toggle="modal" data-bs-target="#myModal">
                 <i class="fa-solid fa-play"></i>
             </div>
-          </div>
     </header>
 
     <main>
